@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 19
     buildToolsVersion "21.1.2"
@@ -16,4 +15,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+    compile files('libs/antlr-2.7.4.jar')
+    compile files('libs/chardet-1.0.jar')
+    compile files('libs/jargs-1.0.jar')
+    compile files('libs/cpdetector_1.0.10.jar')
 }
