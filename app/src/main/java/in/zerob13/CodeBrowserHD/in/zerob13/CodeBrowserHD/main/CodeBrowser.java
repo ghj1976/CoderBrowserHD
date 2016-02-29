@@ -76,6 +76,7 @@ public class CodeBrowser extends Activity {
 			Arrays.sort(GlobalConfig.BASH_ALIASES);
 			Arrays.sort(GlobalConfig.XML_ALIASES);
 			Arrays.sort(GlobalConfig.JS_ALIASES);
+			Arrays.sort(GlobalConfig.GO_ALIASES);
 			mIssort = true;
 		}
 		mTransMap.put(' ', "&nbsp;");
@@ -121,6 +122,9 @@ public class CodeBrowser extends Activity {
 			}
 			if (Arrays.binarySearch(GlobalConfig.JS_ALIASES, endString) >= 0) {
 				mCodeType = " lang-js";
+			}
+			if (Arrays.binarySearch(GlobalConfig.GO_ALIASES, endString) >= 0) {
+				mCodeType = " lang-go";
 			}
 		}
 		if (tFile.length() < 1024 * 32 * 8) {

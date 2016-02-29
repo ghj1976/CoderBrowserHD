@@ -42,6 +42,7 @@ public class GlobalConfig {
 	public static final String[] XML_ALIASES = { "asp", "jsp", "aspx", "htt", "htx", "phtml", "wml", "rss",
 			"xhtml", "shtml", "dhtml", "dtd", "html", "htm", "xhtml", "xml", "xsd", "xsl", "xslt", "config" };
 	public static final String[] JS_ALIASES = { "js", "jscript", "javascript" };
+	public static final String[] GO_ALIASES = { "go" };
 
 	public static int sWidth;
 	public static int sHeight;

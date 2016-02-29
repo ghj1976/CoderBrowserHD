@@ -43,7 +43,7 @@ public class FileChoser extends Activity {
 			"csh", "shell", "rc", "init", "4gl", "proc", "sql", "bas", "frm", "cls", "vbs", "ctl", "vb",
 			"vb.net", "asp", "jsp", "aspx", "htt", "htx", "phtml", "wml", "rss", "xhtml", "shtml", "dhtml",
 			"dtd", "html", "htm", "xhtml", "xml", "xsd", "xsl", "xslt", "config", "js", "jscript",
-			"javascript" };
+			"javascript","go" };
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
