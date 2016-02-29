@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -34,7 +35,10 @@ import in.zerob13.CodeBrowserHD.in.zerob13.CodeBrowserHD.main.GlobalConfig;
  * 文件选择器
  */
 public class FileChoser extends Activity {
-	private File mCurrentDirectory = Environment.getExternalStorageDirectory();
+	//private File mCurrentDirectory = Environment.getExternalStorageDirectory();
+	private File mCurrentDirectory = new File("/storage/emulated/0/myCodes");
+
+
 	private ExpBaseAdapter mAdapter;
 	private ListView mListView;
 
@@ -58,6 +62,9 @@ public class FileChoser extends Activity {
 		GlobalConfig.sWidth = dm.widthPixels;
 		GlobalConfig.sHeight = dm.heightPixels;
 		GlobalConfig.sDes = dm.density;
+
+		Log.i("ghj1976", "onCreate: "+mCurrentDirectory.toString());
+
 		mAdapter = new ExpBaseAdapter(this);
 		mListView.setAdapter(mAdapter);
 		ListView.OnItemClickListener lv2click = new ListView.OnItemClickListener() {
